@@ -7,3 +7,7 @@ jobs:
       - checkout
       - run: npm install
     - run: npm run test
+workflows:
+  build_test:
+    jobs:
+      - run_tests
